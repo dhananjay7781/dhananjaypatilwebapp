@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, sized_box_for_whitespace
 
 import 'package:better_player/better_player.dart';
 import 'package:dhananjay/constants/constcolors.dart';
@@ -20,7 +20,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    String mail = "dhananjaypatil9683@gmail.com";
+    
     ScreenUtil.init(context, designSize: const Size(360, 884));
     double width = 360.w;
     double height = 884.h;
@@ -52,7 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      String email = Uri.encodeComponent("dhananjaypatil9683@gmail.com");
+                      Uri mail = Uri.parse("mailto:$email");
+                      if(await launchUrl(mail)){
+                        print("email app opened successfully");
+                      }else{
+                        print("email app is not opened");
+                      }
+                    },
                     child: Text(
                       "dhananjaypatil9683@gmail.com",
                       style: GoogleFonts.syneMono(
@@ -203,13 +211,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               color: Colors.blue,
-              height: MediaQuery.of(context).size.height,
+              // height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: Padding(
                 padding: EdgeInsets.all(20),
                 child: Column(
                   children: [
                     project1Row(context),
+                    sbox,
+                    line,
+                    sbox,
+                    project2Row(context),
+                    sbox,
+                    line,
+                    sbox,
+                    project3Row(context),
                     sbox,
                     line,
                   ],
