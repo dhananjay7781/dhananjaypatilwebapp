@@ -19,7 +19,7 @@ class _project2descpState extends State<project2descp> {
         elevation: 0,
         centerTitle: true,
         title: Text("Calculator App",
-            style: GoogleFonts.syneMono(fontSize: 12.w.h, color: Colors.white)),
+            style: GoogleFonts.montserrat(fontSize: 12.w.h, color: Colors.white)),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -48,32 +48,32 @@ class _project2descpState extends State<project2descp> {
                       RichText(
                         text: TextSpan(
                           text: "Description",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 15.h.w, color: Colors.blue),
                         ),
                       ),
                       sbox,
                       Text(
                         "--> This is Simple Calculator App using Flutter (SDK) .",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> This is calculator app having smooth UI with Dark Mode.",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> I used Map to store the numbers .",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> Tools & TechStack: Flutter,VSCode etc.",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                     ],

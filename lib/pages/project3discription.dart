@@ -19,7 +19,7 @@ class _project3descpState extends State<project3descp> {
         elevation: 0,
         centerTitle: true,
         title: Text("MKBHD Merch App",
-            style: GoogleFonts.syneMono(fontSize: 12.w.h, color: Colors.white)),
+            style: GoogleFonts.montserrat(fontSize: 12.w.h, color: Colors.white)),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -48,32 +48,32 @@ class _project3descpState extends State<project3descp> {
                       RichText(
                         text: TextSpan(
                           text: "Description",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 15.h.w, color: Colors.blue),
                         ),
                       ),
                       sbox,
                       Text(
                         "--> This is My First App using Flutter (SDK) .",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> I made smooth UI for an App for World's best tech YouTuber #MKBHD. ",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> This is just UI for how merch app will look like .",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                       sbox,
                       Text(
                         "--> Tools & TechStack: Flutter,VSCode etc.",
-                        style: GoogleFonts.syneMono(
+                        style: GoogleFonts.montserrat(
                             fontSize: 15.h.w, color: Colors.black),
                       ),
                     ],
@@ -84,6 +84,6 @@ class _project3descpState extends State<project3descp> {
           ],
         ),
       ),
-    );;
+    );
   }
 }

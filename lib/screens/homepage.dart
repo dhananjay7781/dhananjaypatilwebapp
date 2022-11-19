@@ -20,7 +20,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    
     ScreenUtil.init(context, designSize: const Size(360, 884));
     double width = 360.w;
     double height = 884.h;
@@ -29,6 +28,9 @@ class _MyHomePageState extends State<MyHomePage> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
+            SizedBox(
+              height: 30.h.w,
+            ),
             Container(
               height: 50.h,
               child: Text("Welcome to my Profile !!",
@@ -53,11 +55,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   TextButton(
                     onPressed: () async {
-                      String email = Uri.encodeComponent("dhananjaypatil9683@gmail.com");
+                      String email =
+                          Uri.encodeComponent("dhananjaypatil9683@gmail.com");
                       Uri mail = Uri.parse("mailto:$email");
-                      if(await launchUrl(mail)){
+                      if (await launchUrl(mail)) {
                         print("email app opened successfully");
-                      }else{
+                      } else {
                         print("email app is not opened");
                       }
                     },
@@ -150,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "LinkedIN",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 7.w,
                               decoration: TextDecoration.underline),
                         ),
@@ -166,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "GitHub",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 7.w,
                               decoration: TextDecoration.underline),
                         ),
@@ -182,7 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "LeetCode",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 7.w,
                               decoration: TextDecoration.underline),
                         ),
@@ -199,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "Resume",
-                          style: GoogleFonts.syneMono(
+                          style: GoogleFonts.montserrat(
                               fontSize: 7.w,
                               decoration: TextDecoration.underline),
                         ),
@@ -217,6 +220,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(20),
                 child: Column(
                   children: [
+                    Text(
+                      "----| Projects |----",
+                      style: GoogleFonts.montserrat(
+                          fontSize: 12.w,color: Colors.white),
+                    ),
+                    sbox,
+                    line,
+                    sbox,
                     project1Row(context),
                     sbox,
                     line,

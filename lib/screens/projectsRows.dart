@@ -22,7 +22,7 @@ Widget project1Row(BuildContext context) {
         child: project1(context),
       ),
       Container(
-        height: 80.h.w,
+        height: 120.h.w,
         width: 120.h.w,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -39,7 +39,7 @@ Widget project1Row(BuildContext context) {
               },
               child: Text(
                 "Description",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
@@ -54,7 +54,7 @@ Widget project1Row(BuildContext context) {
               },
               child: Text(
                 "Code",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
@@ -76,7 +76,7 @@ Widget project2Row(BuildContext context) {
         child: project2(context),
       ),
       Container(
-        height: 80.h.w,
+        height: 120.h.w,
         width: 120.h.w,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -93,7 +93,7 @@ Widget project2Row(BuildContext context) {
               },
               child: Text(
                 "Description",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
@@ -108,7 +108,7 @@ Widget project2Row(BuildContext context) {
               },
               child: Text(
                 "Code",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
@@ -127,11 +127,11 @@ Widget project3Row(BuildContext context) {
     children: [
       Container(
         height: 120.h.w,
-        width: 200.w,
+        width: 200.h.w,
         child: project3(context),
       ),
       Container(
-        height: 80.h.w,
+        height: 120.h.w,
         width: 120.h.w,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -148,7 +148,7 @@ Widget project3Row(BuildContext context) {
               },
               child: Text(
                 "Description",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
@@ -163,7 +163,7 @@ Widget project3Row(BuildContext context) {
               },
               child: Text(
                 "Code",
-                style: GoogleFonts.syneMono(
+                style: GoogleFonts.montserrat(
                     fontSize: 8.h.w, decoration: TextDecoration.underline),
               ),
             ),
